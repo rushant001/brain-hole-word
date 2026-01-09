@@ -1,0 +1,5 @@
+.idea
+.baidu-cc
+.claude
+all_in_one_agent/output/
+all_in_one_agent/__pycache__/

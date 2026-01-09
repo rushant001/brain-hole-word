@@ -1,0 +1,72 @@
+llm:
+  # 创意生成模型
+  creative_model: "gpt-4o"
+  # 视觉 Prompt 生成模型
+  visual_model: "gpt-4o"
+  # 创意温度
+  temperature: 0.8
+  # 自定义 base_url (可选，用于代理或兼容 API)
+  base_url: null  # 例如: "https://api.openai.com/v1"
+
+image_generation:
+  # 生图提供商: dall-e-3, flux, qwen, muse, manual
+  provider: "dall-e-3"
+  
+  # DALL-E 3 配置
+  dalle:
+    size: "1024x1024"
+    quality: "hd"
+    style: "vivid"
+  
+  # FLUX.1-schnell 配置 (SiliconFlow / Replicate 等)
+  flux:
+    base_url: "https://api.siliconflow.cn/v1"
+    model: "black-forest-labs/FLUX.1-schnell"
+    size: "1024x1024"
+  
+  # Qwen-Image (通义万象)
+  qwen:
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    model: "wanx-v1"
+    size: "1024*1024"
+  
+  # MuseSteamer-Air-Image
+  muse:
+    base_url: "https://api.example.com/v1"
+    model: "muse-steamer-air"
+    size: "1024x1024"
+
+audio:
+  # TTS 提供商: edge-tts (免费), openai
+  provider: "edge-tts"
+  # 中文解说音色
+  voice_cn: "zh-CN-YunxiNeural"
+  # 英文发音音色
+  voice_en: "en-US-AriaNeural"
+  # 语速调整
+  rate: "+10%"
+
+video:
+  # 输出分辨率 (9:16 竖屏)
+  width: 1080
+  height: 1920
+  fps: 30
+  # Ken Burns 缩放强度 (1.0=不缩放, 1.3=放大30%)
+  ken_burns_zoom: 1.25
+  # 片段间隔秒数
+  padding_seconds: 0.5
+
+workflow:
+  # 生图前暂停确认
+  human_in_the_loop: true
+  # 输出目录
+  output_dir: "./output"
+
+# 文字卡片设置
+cards:
+  font_path: null
+  title_font_size: 120
+  content_font_size: 60
+  background_color: "#1a1a2e"
+  text_color: "#ffffff"
+  accent_color: "#e94560"
