@@ -60,7 +60,6 @@ def run_agent(word: str) -> dict:
 
 
 if __name__ == "__main__":
-    word = 'tree'
     print(f"\n🧠 启动脑洞单词 Agent...")
     print(f"📝 单词: {word}")
     print("=" * 60)
@@ -69,4 +68,3 @@ if __name__ == "__main__":
     
     print("\n" + "=" * 60)
     print("✨ Agent 执行完成!")
-    print(f"📹 结果: {result.get('output', 'N/A')}")
