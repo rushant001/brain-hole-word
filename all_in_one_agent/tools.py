@@ -30,6 +30,7 @@ logger = logging.getLogger(__name__)
 
 # 屏蔽 httpx 的 INFO 日志
 logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("google_genai.models").setLevel(logging.WARNING)
 
 
 # === 加载配置 ===
@@ -200,7 +201,7 @@ def generate_image(visual_prompt: str, word: str) -> str:
             response = client.images.generate(
                 model=config['model'],
                 prompt=visual_prompt,
-                # size=config['size'],
+                size=config['size'],
                 n=1
             )
             image_url = response.data[0].url

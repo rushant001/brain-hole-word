@@ -14,12 +14,12 @@ image_generation:
   qwen:
     base_url: "https://qianfan.baidubce.com/v2"
     model: "qwen-image"
-    size: "512*512"
+    size: "1024x1024"
 
   musesteamer:
     base_url: "https://qianfan.baidubce.com/v2"
     model: "musesteamer-air-image"
-    size: "1024*1024"
+    size: "1024x1024"
 
 audio:
   voice_cn: "zh-CN-YunxiNeural"
