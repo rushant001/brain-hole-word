@@ -3,7 +3,7 @@ llm:
   temperature: 0.7
 
 image_generation:
-  provider: "qwen"  # musesteamer, flux.1-schnell, qwen-image
+  provider: "musesteamer"  # musesteamer, flux.1-schnell, qwen-image
 
 
   flux:
@@ -17,7 +17,7 @@ image_generation:
     size: "1024x1024"
 
   musesteamer:
-    base_url: "https://qianfan.baidubce.com/v2"
+    base_url: "https://qianfan.baidubce.com/v2/musesteamer"
     model: "musesteamer-air-image"
     size: "1024x1024"
 
