@@ -40,4 +40,12 @@ cards:
   text_color: "#ffffff"
   accent_color: "#e94560"
 
+# AI 视频生成配置（百度蒸汽机）
+video_generation:
+  model: "musesteamer-2.0-turbo-i2v-audio"  # 有声视频模型 musesteamer-2.0-turbo-i2v-audio
+  image_provider: "musesteamer"  # 用于生成视频首帧的图片模型
+  image_size: "720x1280"  # 竖屏尺寸
+  default_duration: 5  # 默认视频时长（5或10秒）
+  max_wait: 300  # 最大等待时间（秒）
+
 output_dir: "./output"
